@@ -16,3 +16,8 @@ frontend:
 - cd .\Lha\ 
 - npm i
 - npm i axios
+
+parte fisica:
+-microcontroladores e sensores
+-Arduino IDE
+
