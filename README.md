@@ -18,6 +18,8 @@ frontend:
 - npm i axios
 
 parte fisica:
--microcontroladores e sensores
+-microcontroladores* e sensores
 -Arduino IDE
 
+**Selecione o microcontrolador a ser usado no Arduino IDE, no nosso caso, 2 Arduino Nano e 1 ESP32**
+**Verifique a frequencia de cada**
