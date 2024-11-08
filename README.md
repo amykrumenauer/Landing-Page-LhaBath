@@ -16,3 +16,8 @@ frontend:
 - cd .\Lha\ 
 - npm i
 - npm i axios
+
+bootstrap:
+cd .\frontend\
+cd .\Lha\
+npm install react-bootstrap bootstrap
