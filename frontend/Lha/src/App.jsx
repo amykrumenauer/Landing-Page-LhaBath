@@ -1,27 +1,48 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import React, { useState, useEffect } from "react";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import QuemSomos from "./components/QuemSomos";
+import Servicos from "./components/Servicos";
+import Contato from "./components/Contato";
+import Footer from "./components/Footer";
+import "./index.css"; // Importando o CSS
+import ValoresCarousel from './components/ValoresCarousel'; // Importe o componente
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Home = () => <div className="p-6"><h1>Tenha mais gestão e economia com o LhaBath!</h1></div>;
-const About = () => <div className="p-6"><h2>Sobre nós</h2></div>;
-const Services = () => <div className="p-6"><h2>Serviços que oferecemos</h2></div>;
-const Contact = () => <div className="p-6"><h2>Entre em contato conosco</h2></div>;
+function App() {
+  // Estado para controlar o modo (claro ou escuro)
+  const [darkMode, setDarkMode] = useState(false);
 
-const App = () => {
+  // Função para alternar entre os modos
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
+  // Aplicando a classe "dark-mode" no body quando o estado de darkMode mudar
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
+
   return (
-    <Router>
-      <Navbar />
-      <div className="container mx-auto p-6">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </Router>
+    <div>
+      <NavBar toggleDarkMode={toggleDarkMode} /> {/* Passa a função para o NavBar */}
+      <Home />
+      <QuemSomos />
+      <ValoresCarousel /> {/* Aqui é onde o carrossel de valores será exibido */}
+      <Servicos />
+      <Contato />
+      <Footer />
+    </div>
   );
-};
+}
 
 export default App;
+
+
+
+
 

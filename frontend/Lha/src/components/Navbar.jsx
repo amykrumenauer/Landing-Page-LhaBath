@@ -1,19 +1,28 @@
-import React from 'react'; 
+import React from "react";
+import { Navbar, Nav, Form } from "react-bootstrap";
 
-const Navbar = () => {
+function NavBar({ toggleDarkMode }) {
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <h1>LhaBath</h1>
-      </div>
-      <div className="navbar-links">
-        <a href="#home">Home</a>
-        <a href="#por-que-usar">Por que usar o LhaBath?</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#sobre-nos">Sobre nós</a>
-      </div>
-    </nav>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="#home">LhaBath</Navbar.Brand>
+      <Nav className="ml-auto">
+        <Nav.Link href="#home">Home</Nav.Link>
+        <Nav.Link href="#quemSomos">Quem Somos</Nav.Link>
+        <Nav.Link href="#servicos">Serviços</Nav.Link>
+        <Nav.Link href="#contato">Contato</Nav.Link>
+      </Nav>
+      {/* Switch para alternar entre modos */}
+      <Form.Check
+        type="switch"
+        id="custom-switch"
+        label="Modo Escuro"
+        onChange={toggleDarkMode} // Alterna o modo quando o switch é acionado
+      />
+    </Navbar>
   );
-};
+}
 
-export default Navbar;
+export default NavBar;
+
+
+
