@@ -5,145 +5,52 @@
   font-family: 'Jura', sans-serif;
 }
 
-/* Definindo variáveis para modos claro e escuro */
-:root {
-  --cor-principal: #2C8D7C; /* Cor principal */
-  --cor-fundo-claro: white; /* Fundo do modo claro */
-  --cor-fundo-escuro: #121212; /* Fundo do modo escuro */
-  --cor-texto-claro: #212529; /* Texto no modo claro */
-  --cor-texto-escuro: white; /* Texto no modo escuro */
-  --hover-claro: #17473F; /* Cor do hover no modo claro */
-  --hover-escuro: #17473F; /* Cor do hover no modo escuro */
-  --cor-botao-claro: #f8f9fa; /* Cor do botão no modo claro */
-  --cor-botao-escuro: #333; /* Cor do botão no modo escuro */
-  --cor-link-claro: #007bff; /* Cor do link no modo claro */
-  --cor-link-escuro: #66ccff; /* Cor do link no modo escuro */
-}
-
 /* Transições suaves para a troca de tema */
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo para o body no modo claro (modo padrão) */
+/* Body no modo claro */
 body {
-  background-color: var(--cor-fundo-claro); /* Modo claro por padrão */
-  color: var(--cor-texto-claro); /* Texto no modo claro */
+  background-color: white;
+  color: #121212;
 }
 
-/* Estilo para o body no modo escuro */
+/* Body no modo escuro */
 body.dark-mode {
-  background-color: var(--cor-fundo-escuro); /* Modo escuro */
-  color: var(--cor-texto-escuro); /* Texto no modo escuro */
+  background-color: #121212;
+  color: white;
 }
 
 /* Navbar */
-.navbar {
+.navbar, 
+.ml-auto{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 25px 40px;
-  background-color: var(--cor-principal);
-  color: white;
-  transition: background-color 0.3s;
-}
-
-.navbar-brand h1 {
-  margin: 0;
-  font-size: 34px;
-  font-weight: bold;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: white;
-  margin: 0 15px;
-  font-size: 16px;
-  transition: opacity 0.3s ease, color 0.3s;
-}
-
-.navbar-links a:hover {
-  opacity: 0.7;
-  color: var(--hover-claro);
-}
-
-/* Ajuste para modo escuro */
-body.dark-mode .navbar-links a {
-  color: var(--cor-link-escuro); /* Link no modo escuro */
-}
-
-body.dark-mode .navbar-links a:hover {
-  color: var(--hover-escuro);
-}
-
-body.dark-mode .navbar {
-  background-color: var(--cor-principal);
-}
-
-/* Botões */
-.btn {
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Botões no modo claro */
-.btn-light {
-  background-color: var(--cor-botao-claro);
-  color: var(--cor-texto-claro);
-  border: 1px solid #ddd;
-}
-
-.btn-light:hover {
-  background-color: #e2e6ea;
-}
-
-/* Botões no modo escuro */
-body.dark-mode .btn-light {
-  background-color: var(--cor-botao-escuro);
-  color: var(--cor-texto-escuro);
-}
-
-body.dark-mode .btn-light:hover {
-  background-color: #444;
-}
-
-/* Botão de alternância de tema */
-.theme-toggle-btn {
-  background-color: var(--cor-principal);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+  background-color: #2C8D7C; 
+  color: #ffff;
+  width: 100%;
   transition: background-color 0.3s ease;
 }
 
-.theme-toggle-btn:hover {
-  background-color: var(--hover-claro);
+/* Logo - LhaBath */
+.navbar-brand{
+  font-size: 1000px;
+  color: white;
+  margin-right: 100px;
+  transition: color 0.3s ease;
 }
 
-body.dark-mode .theme-toggle-btn:hover {
-  background-color: var(--hover-escuro);
+body.dark-mode .navbar {
+  background-color: #2C8D7C;
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-links {
-    margin-top: 10px;
-  }
-
-  .navbar-links a {
-    margin: 5px 0;
+    align-items: center;
   }
 }
-
-
-

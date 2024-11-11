@@ -7,7 +7,7 @@ function ValoresCarousel() {
       <h2 className="text-center mb-4">Nossos Valores</h2>
       <Carousel>
         <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#f0f0f0' }}>
+          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#2C8D7C' }}>
             <div className="text-center">
               <h4>Inovação</h4>
               <p>Buscamos sempre novas soluções tecnológicas para atender às necessidades dos nossos clientes.</p>
@@ -16,7 +16,7 @@ function ValoresCarousel() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#e0f7fa' }}>
+          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#46A788' }}>
             <div className="text-center">
               <h4>Sustentabilidade</h4>
               <p>Promovemos o uso consciente de recursos para reduzir o impacto ambiental.</p>
@@ -25,7 +25,7 @@ function ValoresCarousel() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#c8e6c9' }}>
+          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#66BBA1' }}>
             <div className="text-center">
               <h4>Eficiência</h4>
               <p>Garantimos a otimização dos processos, melhorando resultados e economizando tempo e recursos.</p>
@@ -34,7 +34,7 @@ function ValoresCarousel() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#fff3e0' }}>
+          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#7AC7B2' }}>
             <div className="text-center">
               <h4>Qualidade</h4>
               <p>Oferecemos produtos duráveis e confiáveis, com foco na satisfação do cliente.</p>
@@ -43,7 +43,7 @@ function ValoresCarousel() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#e1bee7' }}>
+          <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#8FD9C4' }}>
             <div className="text-center">
               <h4>Compromisso</h4>
               <p>Estamos dedicados ao sucesso dos nossos clientes, oferecendo soluções personalizadas e um atendimento de excelência.</p>

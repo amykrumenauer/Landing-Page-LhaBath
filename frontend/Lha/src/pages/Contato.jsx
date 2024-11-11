@@ -2,7 +2,7 @@ import React from "react";
 
 function Contato() {
   return (
-    <section id="contato" style={{ padding: "50px", backgroundColor: "#f7f7f7" }}>
+    <section id="contato" style={{ padding: "50px" }}>
       <h2>Contato</h2>
       <p>Para mais informações ou para agendar uma demonstração, entre em contato conosco:</p>
       <ul>
