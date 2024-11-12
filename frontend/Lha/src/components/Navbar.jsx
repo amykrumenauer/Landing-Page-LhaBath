@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Form } from "react-bootstrap";
 
+
 function NavBar({ toggleDarkMode }) {
   return (
     <Navbar className="navbar">
@@ -16,7 +17,7 @@ function NavBar({ toggleDarkMode }) {
       <Form.Check
         type="switch"
         id="custom-switch"
-        label="Modo Escuro"
+        className="custom-switch"
         onChange={toggleDarkMode}
       />
     </Navbar>

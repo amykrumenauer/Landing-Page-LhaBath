@@ -24,27 +24,139 @@ body.dark-mode {
 
 /* Navbar */
 .navbar, 
-.ml-auto{
+.ml-auto {
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25px 40px;
   background-color: #2C8D7C; 
-  color: #ffff;
   width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-/* Logo - LhaBath */
-.navbar-brand{
-  font-size: 1000px;
-  color: white;
-  margin-right: 100px;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 body.dark-mode .navbar {
   background-color: #2C8D7C;
+}
+
+/* Efeito de Hover nos Links ou Itens da Navbar */
+.navbar a {
+  text-decoration: none; 
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #17473F; 
+}
+
+/* Estilizando o Navbar.Brand */
+.navbar .navbar-brand {
+  font-size: 30px !important; 
+  color: white !important; 
+  padding-left: 20px;
+  transition: color 0.3s ease; 
+}
+
+.navbar .navbar-brand:hover {
+  color: #1a6b53 !important; 
+}
+
+/* Estilo personalizado para o Form.Check */
+.custom-switch .form-check-input {
+  width: 50px;   
+  height: 25px;  
+  background-color: #ffffff;  
+  border-radius: 30px;  
+  position: relative;
+  border: none;   
+  outline: none;  
+  transition: background-color 0.3s ease;
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: #17473F;  
+}
+
+.custom-switch .form-check-input:checked:before {
+  left: 26px; 
+}
+
+.custom-switch .form-check-input:focus {
+  outline: none;  
+  box-shadow: none; 
+}
+
+/* Efeito Hover nos Títulos */
+h2, h3 {
+  color: #2C8D7C; 
+  font-family: 'Jura', sans-serif;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover, h3:hover {
+  transform: scale(1.05);  
+  color: #1a6b53; 
+}
+
+/* Efeito de Hover nos Parágrafos */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #000000; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+p:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-3px); 
+}
+
+body.dark-mode p {
+  color: white; 
+}
+
+/* Modo claro Serviços */
+#servicos {
+  padding: 100px 50px;
+  background-color: #f8f8f8; 
+  transition: background-color 0.3s ease;
+}
+
+.service-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Modo escuro do Serviços */
+body.dark-mode #servicos {
+  background-color: #121212; 
+}
+
+body.dark-mode .service-card {
+  background-color: #000000; 
+  color: #fff; 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Animação para os elementos de fade-in: Frase da Home */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards; 
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; 
+  }
 }
 
 /* Responsividade para telas menores */
