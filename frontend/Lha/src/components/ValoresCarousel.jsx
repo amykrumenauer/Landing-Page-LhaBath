@@ -37,7 +37,7 @@ function ValoresCarousel() {
           <div className="d-flex justify-content-center align-items-center" style={{ height: '300px', backgroundColor: '#7AC7B2' }}>
             <div className="text-center">
               <h4>Qualidade</h4>
-              <p>Oferecemos produtos duráveis e confiáveis, com foco na satisfação do cliente.</p>
+              <p>Oferecemos produtos duráveis e confiáveis.</p>
             </div>
           </div>
         </Carousel.Item>

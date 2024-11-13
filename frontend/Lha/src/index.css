@@ -35,10 +35,6 @@ body.dark-mode {
   transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-body.dark-mode .navbar {
-  background-color: #2C8D7C;
-}
-
 /* Efeito de Hover nos Links ou Itens da Navbar */
 .navbar a {
   text-decoration: none; 

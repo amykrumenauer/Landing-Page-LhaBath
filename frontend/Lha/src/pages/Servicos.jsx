@@ -65,9 +65,9 @@ const cardStyle = {
 
 // Estilo para o modo escuro
 const darkModeCardStyle = {
-  backgroundColor: "#2C8D7C", // Fundo escuro
+  backgroundColor: "#2C8D7C",
   borderRadius: "8px",
-  boxShadow: "0 4px 8px rgba(255, 255, 255, 0.2)", // Sombra mais suave
+  boxShadow: "0 4px 8px rgba(255, 255, 255, 0.2)", 
   padding: "20px",
   textAlign: "center",
   width: "250px",
