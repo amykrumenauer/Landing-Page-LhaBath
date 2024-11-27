@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Banheiro from '../imagens/banheiro.png'
 
 function Home() {
   // Estado para controlar a visibilidade do texto
@@ -47,7 +48,7 @@ function Home() {
       
       {/* Imagem com efeito de hover */}
       <img
-        src="./src/imagens/banheiro.png"
+        src={Banheiro}
         alt="Banheiro inteligente"
         style={hovered ? imageHoveredStyle : imageStyle}  
         onMouseEnter={() => setHovered(true)}  
