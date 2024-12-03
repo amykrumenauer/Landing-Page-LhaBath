@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
+
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ValoresCarousel from './components/ValoresCarousel';
+
 import Home from "./pages/Home";
 import QuemSomos from "./pages/QuemSomos";
 import Servicos from "./pages/Servicos";
 import Contato from "./pages/Contato";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "./index.css"; 
 
 function App() {

@@ -7,12 +7,12 @@ function Servicos() {
       <h2 style={{ textAlign: "center", marginBottom: "50px", fontSize: "36px" }}>Serviços</h2>
       
       <div className="services-container" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "30px" }}>
-        {/* Card Torneira Automática */}
+        {/* Card Controle de Temperatura e Umidade */}
         <div className="service-card" style={applyDarkModeStyles()}>
           <FaWater size={40} color="#fff" style={{ marginBottom: "20px" }} /> {/* Ícone de água */}
-          <h3>Torneira Automática</h3>
-          <p>Sensores acionam o fluxo de água automaticamente e enviam alertas para manutenção quando necessário.</p>
-          <p><strong>Preço:</strong> R$ 150,00</p>
+          <h3>Controle de Temperatura e Umidade</h3>
+          <p>Sensores que controlam a temperatura e umidade para propocionar maior conforto para o usuário.</p>
+          <p><strong>Preço:</strong> R$ 70,00</p>
         </div>
 
         {/* Card Controle de Papel */}
