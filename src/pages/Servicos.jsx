@@ -1,5 +1,5 @@
 import React from "react";
-import { FaWater, FaToiletPaper, FaTrashAlt, FaSoap, FaLightbulb } from 'react-icons/fa';  // Importando ícones do React Icons
+import { FaWater, FaToiletPaper, FaTrashAlt, FaSoap } from 'react-icons/fa';  // Importando ícones do React Icons
 
 function Servicos() {
   return (
@@ -37,14 +37,6 @@ function Servicos() {
           <h3>Identificação de Nível de Sabão</h3>
           <p>Sensores monitoram os níveis e enviam notificações quando o sabão está acabando.</p>
           <p><strong>Preço:</strong> R$ 80,00</p>
-        </div>
-
-        {/* Card Iluminação Inteligente */}
-        <div className="service-card" style={applyDarkModeStyles()}>
-          <FaLightbulb size={40} color="#fff" style={{ marginBottom: "20px" }} /> {/* Ícone de lâmpada */}
-          <h3>Iluminação Inteligente</h3>
-          <p>Sistema que acende e apaga com base na ocupação, otimizando o consumo de energia.</p>
-          <p><strong>Preço:</strong> R$ 250,00</p>
         </div>
       </div>
     </section>

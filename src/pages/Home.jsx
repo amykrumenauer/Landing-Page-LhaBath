@@ -61,7 +61,9 @@ function Home() {
           onMouseEnter={() => setHovered(true)}  
           onMouseLeave={() => setHovered(false)} 
         >
+          <a href=""></a>
           Inscreva-se Aqui
+        
         </button>
       </div>
     </section>
