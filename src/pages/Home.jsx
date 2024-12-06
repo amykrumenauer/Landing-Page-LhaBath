@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Banheiro from '../imagens/banheiro.png'
+import { Link } from "react-router-dom";
 
 function Home() {
   // Estado para controlar a visibilidade do texto
@@ -60,8 +61,8 @@ function Home() {
           style={buttonStyle}
           onMouseEnter={() => setHovered(true)}  
           onMouseLeave={() => setHovered(false)} 
+          onClick={() => window.open("https://lha-bath-front.vercel.app", "_blank")}
         >
-          <a href=""></a>
           Inscreva-se Aqui
         
         </button>
