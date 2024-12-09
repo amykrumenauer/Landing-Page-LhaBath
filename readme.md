@@ -12,3 +12,11 @@ Visite a página da LhaBath hospedada no Vercel:
 - **Banco de Dados:** MySQL
 - **IoT:** C/C++
 - **Ferramentas:** Visual Studio Code
+- **Hospedagem:**
+  - **Vercel**
+  - **Render**
+  - **Clever Cloud**
+
+## 👥 Colaboradores
+- **Laura Bidinoto**
+- **Henrique Mioduski**
