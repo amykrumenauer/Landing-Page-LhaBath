@@ -7,7 +7,7 @@ function Home() {
   const [hovered, setHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false); 
 
-  // Estilos em linha para o botão
+  /*Estilos em linha para o botão
   const buttonStyle = {
     backgroundColor: hovered ? "#1e6f57" : "#2C8D7C", 
     color: "#fff",
@@ -17,7 +17,7 @@ function Home() {
     cursor: "pointer",
     transition: "background-color 0.3s ease, box-shadow 0.3s ease", 
     boxShadow: hovered ? "0 8px 16px rgba(0, 0, 0, 0.2)" : "none", 
-  };
+  };*/
 
   // Estilos em linha para a imagem com efeito de hover
   const imageStyle = {
@@ -56,7 +56,7 @@ function Home() {
         onMouseLeave={() => setHovered(false)} 
       />
       
-      <div style={{ marginTop: "30px" }}>
+     { /*<div style={{ marginTop: "30px" }}>
         <button
           style={buttonStyle}
           onMouseEnter={() => setHovered(true)}  
@@ -66,7 +66,7 @@ function Home() {
           Inscreva-se Aqui
         
         </button>
-      </div>
+       </div>*/ }
     </section>
   );
 }

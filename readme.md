@@ -14,8 +14,6 @@ Visite a página da LhaBath hospedada no Vercel:
 - **Ferramentas:** Visual Studio Code
 - **Hospedagem:**
   - **Vercel**
-  - **Render**
-  - **Clever Cloud**
 
 ## 👥 Colaboradores
 - **Laura Bidinoto**
